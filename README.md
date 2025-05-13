@@ -55,7 +55,7 @@ websocket-server/
 ### ⬇️ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/fastapi-ws-shutdown.git
+git clone https://github.com/JuanCote/fastapi-ws-shutdown.git
 cd fastapi-ws-shutdown
 ```
 
