@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "websocket-server"
+version = "0.1.0"
+description = ""
+authors = ["JuanCote <lyy1707@gmail.com>"]
+readme = "README.md"
+packages = [{include = "websocket_server", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.12"
+uvicorn = "^0.34.2"
+redis = "^6.0.0"
+python-dotenv = "^1.1.0"
+websockets = "^15.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+flake8 = "^7.2.0"
+isort = "^6.0.1"
+mypy = "^1.15.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | __pycache__
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.mypy]
+python_version = 3.11
+ignore_missing_imports = true
+check_untyped_defs = true

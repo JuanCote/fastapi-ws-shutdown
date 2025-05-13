@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Poetry
+poetry.lock
+
+# Environments
+.env
+.venv/
+venv/
+
+# mypy cache
+.mypy_cache/
+
+# pyright
+.pyright/
+
+# flake8 cache
+*.cache
+*.log
+
+# VSCode settings
+.vscode/
+
+# Docker
+*.pid
+*.tar
+*.img
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test artifacts
+coverage.*
+htmlcov/
+.tox/
+.pytest_cache/
