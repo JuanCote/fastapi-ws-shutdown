@@ -52,6 +52,25 @@ websocket-server/
 * Python 3.11+
 * Docker + Docker Compose (v2)
 
+### ⬇️ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/fastapi-ws-shutdown.git
+cd fastapi-ws-shutdown
+```
+
+### 📄 Create a `.env` file
+
+Inside the project root, create a file named `.env` and add the following:
+
+```env
+REDIS_HOST=redis
+REDIS_PORT=6379
+REDIS_CHANNEL=broadcast
+
+PYTHONPATH=.
+```
+
 ### 🐳 Run with Docker Compose
 
 ```bash
