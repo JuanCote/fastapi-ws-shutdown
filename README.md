@@ -125,6 +125,10 @@ Which internally runs:
 
 ## 🧠 Graceful Shutdown Explained
 
+This application supports running with **multiple Uvicorn workers**, thanks to Redis-based coordination.
+
+Each worker maintains its own connection state and shares shutdown progress via Redis, ensuring that the shutdown logic functions correctly even in a multi-process environment.
+
 1. **Signal Handling**
 
    * Custom handlers for `SIGINT` and `SIGTERM` are registered.
